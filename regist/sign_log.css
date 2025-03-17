@@ -7,7 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@ body{
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(50px);
     border-radius: 10px;
-    padding: 30px 40px; 
+    padding: 30px 40px;
 }
 
 .signin h2 {
@@ -63,7 +63,7 @@ body{
     font-size: 20px;
 }
 
-.signin .remember-forgot { 
+.signin .remember-forgot {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
@@ -103,7 +103,7 @@ body{
     margin: 20px 0 15px;
 }
 
-.register p a{
+.register p a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;

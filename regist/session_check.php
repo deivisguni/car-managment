@@ -1,4 +1,5 @@
-/<?php
+/
+<?php
 
 //session management problem
 session_start();

@@ -35,13 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
             if ($role === 'admin') {
-            echo json_encode(["status" => "success", "role" => $role]);
+                echo json_encode(["status" => "success", "role" => $role]);
 
             } elseif ($role === 'driver') {
-            echo json_encode(["status" => "success", "role" => $role]);
+                echo json_encode(["status" => "success", "role" => $role]);
 
             } elseif ($role === 'departments_employee') {
-            echo json_encode(["status" => "success", "role" => $role]);
+                echo json_encode(["status" => "success", "role" => $role]);
 
             }
             exit();
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo json_encode(["status" => "error", "message" => "Invalid email or password"]);
     }
-    
+
     $stmt->close();
 }
 $conn->close();

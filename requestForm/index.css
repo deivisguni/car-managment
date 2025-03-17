@@ -21,7 +21,10 @@ label {
     color: #333;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;

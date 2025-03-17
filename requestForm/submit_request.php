@@ -3,8 +3,8 @@
 // kredencialet e DB ne mysql
 $servername = "localhost";
 $username = 'root';
-$password = ""; 
-$dbname = "car_management"; 
+$password = "";
+$dbname = "car_management";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -32,7 +32,7 @@ if ($_POST['time_format'] === 'hours') {
     if (empty($_POST['time_get']) || empty($_POST['time_turn'])) {
         die("Error: Time inputs are required when selecting hours.");
     } else {
-        $date_needed .= ' ' . $_POST['time_get']; 
+        $date_needed .= ' ' . $_POST['time_get'];
         $return_date .= ' ' . $_POST['time_turn'];
     }
 } else {
@@ -53,4 +53,3 @@ if ($stmt->execute()) {
 $stmt->close();
 $conn->close();
 ?>
-

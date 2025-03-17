@@ -8,7 +8,7 @@ fetch('../regist/check_auth.php')
     });
 
 // shfaqja e formatit te kohes ne varesi te selektimit
-document.getElementById("time_format").addEventListener("change", function(event) {
+document.getElementById("time_format").addEventListener("change", function (event) {
     const isHours = event.target.value === "hours";
     document.getElementById("time_get").style.display = isHours ? "block" : "none";
     document.getElementById("time_turn").style.display = isHours ? "block" : "none";
@@ -22,7 +22,7 @@ function toggleMenu() {
 
 function removeSession() {
     fetch('../logout.php')
-    .then(response => {
-        window.location.href = '../regist/sign_log.php';
-    });
+        .then(response => {
+            window.location.href = '../regist/sign_log.php';
+        });
 }
